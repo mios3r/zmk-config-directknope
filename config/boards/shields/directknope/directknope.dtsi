@@ -13,7 +13,7 @@
 // | SW1  | SW2  | SW3  | SW4  | SW5  | SW6  | SW7  |
 
 		map = <
-RC(0,0) RC(1,0) RC(2,0) RC(3,0) RC(4,0)  RC(5,0) RC(6,0)
+RC(0,0) RC(0,1) RC(0,2) RC(0,3) RC(0,4)  RC(0,5) RC(0,6)
 
 		>;
 	};
@@ -23,16 +23,16 @@ RC(0,0) RC(1,0) RC(2,0) RC(3,0) RC(4,0)  RC(5,0) RC(6,0)
 		label = "KSCAN";
 
 		diode-direction = "col2row";
-			col-gpios =
-            <&xiao_d 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-            <&xiao_d 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-            <&xiao_d 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-            <&xiao_d 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-            <&xiao_d 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-            <&xiao_d 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-            <&xiao_d 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
-            row-gpios =
-            <&xiao_d 7 (GPIO_ACTIVE_HIGH)>;
+			row-gpios =
+                <&xiao_d 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                <&xiao_d 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                <&xiao_d 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                <&xiao_d 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                <&xiao_d 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                <&xiao_d 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                <&xiao_d 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+            col-gpios =
+                <&xiao_d 7 (GPIO_ACTIVE_HIGH)>;
 	};
 
 	left_encoder: encoder_left {
