@@ -6,14 +6,11 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+       default_layer {
             bindings = <
-                              &kp KP_N8
-                &kp KP_N4     &kp KP_N5     &kp KP_N6
-                &kp KP_N1     &kp KP_N2     &kp KP_N3
+                &kp Q       &kp W       &kp E       &kp R       &kp T       &kp Y    &kp U 
             >;
-        }; 
-        
-        
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+       };
     };
 };
