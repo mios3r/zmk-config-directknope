@@ -8,11 +8,10 @@
 
        default_layer {
             bindings = <
-                            &kp U 
                 &kp R       &kp T       &kp Y
                 &kp Q       &kp W       &kp E          
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+
        };
     };
 };
